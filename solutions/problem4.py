@@ -15,9 +15,10 @@ def highest_palindrome_product(maximum):
 	for x in range (1, maximum):
 		for y in range (1, maximum):
 			product = x*y
+			# If the product's been computed before, it'll have been cached. Otherwise, cache it
 			if product not in palindrome:
 				palindrome[product] = is_palindrome(product)
 	filtered_palindrome = dict((key, value) for key, value in palindrome.iteritems() if value == True)
-	return max(filtered_palindrome.keys(), key=int)
+	return max(filtered_palindrome, key=int)
 	
 print highest_palindrome_product(1000)
