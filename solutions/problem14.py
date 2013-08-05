@@ -37,15 +37,15 @@ def is_odd(n):
 def is_even(n):
 	return n % 2 == 0
 	
-def stuff():
+def longest_collatz_sequence(max_value):
 	largest = 1
 	max_len = 1
-	for x in range(1, 1000000):
+	for x in range(1, max_value):
 		current = collatz(x)
 	 	if current > max_len:
 			largest = x
 		 	max_len = current
  	return largest
 
-print stuff()
+print longest_collatz_sequence(1000000)
 			

@@ -14,10 +14,10 @@ def fib(nth):
 def is_even(num):
 	return num % 2 == 0
 
-def stuff():
+def even_fib_value_sum():
 	x = 1
 	while fib(x) < 4000000:
 		x += 1
 	return sum(list(value for key, value in fibonacci.iteritems() if is_even(value)))
 	
-print stuff()
+print even_fib_value_sum()
