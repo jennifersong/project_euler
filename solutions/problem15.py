@@ -1,4 +1,3 @@
-import time
 paths = {}
 
 def lattice_paths(x, y):
