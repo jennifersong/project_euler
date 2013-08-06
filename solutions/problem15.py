@@ -1,12 +1,9 @@
 paths = {}
 
 def lattice_paths(x, y):
-	total = 0
 	if x == 0 or y == 0:
 		paths[(x, y)] = 1
-	elif (x, y) in paths:
-		total += paths[(x, y)]
-	else:
+	elif (x, y) not in paths:
 		paths[(x, y)] = paths[(x, y-1)] + paths[(x-1, y)]
 
 def num_paths(x, y):
