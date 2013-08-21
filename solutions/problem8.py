@@ -6,7 +6,7 @@ ordered = {}
 
 # Sorts the digits in ascending order, then concatenates and returns them as a string
 def sorted_concatenation(digits):
-	return "".join(map(str, sorted(digits)))
+	return "".join(sorted(digits))
 	
 def greatest_product(number):
 	string = str(number)
