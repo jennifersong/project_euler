@@ -22,7 +22,7 @@ def sum_factorial(n):
 count = 0        
 for x in xrange(10):
     factorial(x)
-for x in xrange(100000):
+for x in xrange(1000000):
     chain = sum_factorial(x)
     if len(chain.keys()) == 60:
         count += 1
